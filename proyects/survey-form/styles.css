@@ -28,7 +28,7 @@ body {
     width: 65vw;
     max-width: 600px;
     margin: 0 auto;
-    border-radius:10%;
+    border-radius:20px;
     padding: 1rem;
     margin-top: 2rem;
 }
@@ -73,3 +73,29 @@ body {
   textarea{
     resize: none;
   }
+
+  @media (max-width: 600px) {
+
+    body {
+      font-size: 10px;
+    }
+    .formContainer {
+      width: 350px;
+      padding: 1rem 1rem 0rem 1rem;
+      margin-top: 0.5rem;
+    }
+
+    textarea{
+      width: 100%;
+    }
+    input[type="submit"] {
+      margin-top: 1rem; }
+    }
+
+    @media (max-width: 400px) {
+      .formContainer {
+        width: 300px;
+        padding: 1rem 1rem 0rem 1rem;
+        margin-top: 0.5rem;
+      }
+    }
