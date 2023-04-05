@@ -32,20 +32,21 @@ body {
     font-size: 24px;
     color: #f9faf8;
     font-weight: bold;
+    margin-left: 2rem;
   }
 
     /* Nav flex for hero / header*/
 nav {
     display: flex;
-    margin: auto;
-    width: 80%;
     padding: 20px 0px;
     justify-content: space-between;
   }
   .nav-link{
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-right: 2rem;
   }
 
   .nav-link a{
@@ -124,7 +125,7 @@ img {
 .imgSrc{
   width: 160px;
   height: 130px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .blueBoxContainer{
@@ -161,4 +162,13 @@ img {
   background-color: #1f2937;
   color: #e5e7eb;
   padding: 1.5rem;
+}
+
+@media (max-width: 450px){
+.nav-link{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  margin-bottom: 1.5rem;
+}
 }
