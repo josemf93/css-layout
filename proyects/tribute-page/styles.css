@@ -1,11 +1,17 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@600&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-font-family:  'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+font-family: 'Anuphan', sans-serif;
+background-color: rgb(207, 206, 206);
+}
+
+a:visited{
+    color: black;
 }
 
 #title{
@@ -17,36 +23,50 @@ font-family:  'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 h1{
     font-size: 48px;
 }
-#img-div{
+
+#img-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
+    background-color: white;
 }
 
 #image{
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 500px;
     object-fit: cover;
     border-radius: 10px;
-    margin-top: -20px;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+}
+
+figcaption{
+    margin: 1rem 0;
+}
+#tribute-info-title{
+    margin: 1.5rem 0;
+    text-align: center;
 }
 
 #tribute-info{
-    background-color: rgb(207, 206, 206);
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 1rem;
 }
 
 #tribute-info-container{
+    width: 40%;
+}
 
-    width: 50%;
+#tribute-info-container > ul{
+    margin: 1.8rem 0;
 }
 
 #tribute-info span{
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 .info{
@@ -55,5 +75,12 @@ h1{
 
 #tribute{
     text-align: center;
+    margin: 2rem 0;
     
+}
+
+@media (max-width: 450px) {
+    #image{
+        height: auto;
+    }
 }
